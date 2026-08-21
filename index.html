@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garfield — Cybersecurity • CTF • OSINT</title>
+    <meta
+      name="description"
+      content="Exploring cybersecurity through CTF challenges, OSINT and hands-on labs."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="fx-grid" aria-hidden="true"></div>
+    <div class="fx-scanline" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="nav__brand" href="#top">
+        <span class="nav__prompt">root@garfield</span>:<span class="nav__path"
+          >~</span
+        >$
+      </a>
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero__inner">
+          <p class="hero__eyebrow">
+            <span class="dot" aria-hidden="true"></span> system online
+          </p>
+          <h1 class="hero__name">Garfield</h1>
+          <p class="hero__roles" id="roles"></p>
+          <p class="hero__desc">
+            Exploring cybersecurity through CTF challenges, OSINT and hands-on
+            labs.
+          </p>
+
+          <div class="terminal" role="img" aria-label="Terminal animation">
+            <div class="terminal__bar">
+              <span class="terminal__btn"></span>
+              <span class="terminal__btn"></span>
+              <span class="terminal__btn"></span>
+              <span class="terminal__title">garfield@shell</span>
+            </div>
+            <pre class="terminal__body"><code id="typed"></code></pre>
+          </div>
+
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#projects">View Projects</a>
+            <a class="btn" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <h2 class="section__title">
+          <span class="section__idx">//</span> What I Do
+        </h2>
+        <div class="do-grid" id="whatido"></div>
+      </section>
+
+      <section class="section" id="skills">
+        <h2 class="section__title">
+          <span class="section__idx">//</span> Skills
+        </h2>
+        <div class="skill-grid" id="skills-grid"></div>
+      </section>
+
+      <section class="section" id="projects">
+        <h2 class="section__title">
+          <span class="section__idx">//</span> Projects
+        </h2>
+        <div class="proj-grid" id="projects-grid"></div>
+      </section>
+
+      <section class="section section--contact" id="contact">
+        <h2 class="section__title">
+          <span class="section__idx">//</span> Contact
+        </h2>
+        <p class="contact__text">
+          Open to CTF teams, security discussions and collaboration.
+        </p>
+        <div class="social" id="social"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copy">© 2026 Garfield</p>
+      <p class="footer__tag">Cybersecurity • CTF • OSINT</p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
